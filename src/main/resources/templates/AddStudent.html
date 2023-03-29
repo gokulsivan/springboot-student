@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Name and Address Form</title>
+</head>
+<body>
+<h1>Enter your name and address:</h1>
+<form action="#" th:action="@{/submit}" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

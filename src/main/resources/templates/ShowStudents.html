@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>User List</title>
+</head>
+<body>
+<h1>User List</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+  </tr>
+  </thead>
+  <tbody>s
+  <tr th:each="student : ${studentList}">
+    <td th:int="${student.id}"></td>
+    <td th:text="${student.name}"></td>
+    <td th:text="${student.address}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
